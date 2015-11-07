@@ -1,0 +1,5 @@
+" Set line number on the left
+set number
+
+" Set syntax highlighting
+syntax on
