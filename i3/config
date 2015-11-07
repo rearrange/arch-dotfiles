@@ -21,7 +21,7 @@ floating_modifier $mod
 
 # Start a terminal using i3-sensible-terminal. It has its own settings to
 # choose which terminal to start. I only have xterm and Terminator, and it
-# choose Terminator. TODO: put ref links here.
+# choose Terminator. TDL: put ref links here.
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Kill focused window.
@@ -85,11 +85,6 @@ bindsym $mod+space focus mode_toggle
 # Note: this is the default, I rarely used this. 
 # Might want to practice using this to avoid using arrow key too much.
 bindsym $mod+a focus parent
-
-# Focus the child container
-# Note: this is the default, I don't used this.
-# Might want to practice using this to avoid using arrow key too much.
-bindsym $mod+d focus child
 
 # Name the workspace string. 
 # Use the $tag variable for workspace related keybinding below.
