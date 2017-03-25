@@ -140,9 +140,10 @@ bindsym XF86AudioPrev exec playerctl previous
 # take screenshot, then move the files to Pictures/Screenshots folder.  
 bindsym --release Print exec --no-startup-id scrot '%Y-%m-%d_%H:%M:%S_$wx$h_scrot.png' -e 'mv $f ~/Pictures/Screenshots/'
 
-# Auto-start program on boot to set the wallpaper using feh. Ensure feh 
-# package is installed, and the image is renamed to default.jpg
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/default.jpg
+# Auto-start program on boot
+# - Use nitrogen to set wallpapers 
+#   Ensure nitrogen and archlinux-wallpapers are configured first. 
+exec_always --no-startup-id nitrogen --restore
 
 # Reload the configuration file.
 bindsym $mod+Shift+c reload
@@ -181,11 +182,7 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar. Use custom i3status configuration
 # file located at $XDG_CONFIG_HOME.
-# Note: The default has tray_output primary, not sure what's the effect.
-
 bar {
         position top
 	status_command i3status -c ~/.config/i3/i3status.conf
-        
-	# default - tray_output primary
 }
