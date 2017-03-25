@@ -88,7 +88,7 @@ bindsym $mod+a focus parent
 
 # Name the workspace string. 
 # Use the $tag variable for workspace related keybinding below.
-set $tag1 "1: http"
+set $tag1 "1: webs"
 set $tag2 "2: term"
 set $tag3 "3: code"
 set $tag4 "4: vids"
