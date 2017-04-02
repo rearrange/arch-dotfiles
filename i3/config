@@ -186,3 +186,8 @@ bar {
         position top
 	status_command i3status -c ~/.config/i3/i3status.conf
 }
+
+bar {
+	position bottom
+	status_command i3status -c ~/.config/i3/i3status.conf
+}
