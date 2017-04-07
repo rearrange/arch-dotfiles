@@ -186,6 +186,7 @@ bindsym $mod+r mode "resize"
 # file located at $XDG_CONFIG_HOME.
 bar {
         position top
+	workspace_buttons no
 	status_command i3status -c ~/.config/i3/i3status_top.conf
 }
 
