@@ -13,15 +13,14 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. By default, the i3-config-wizard also 
 # provided pango: DejaVu Sans Mono 8 as another selection, but I've deleted it
-# because I'm not using it. 
 font pango:monospace 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position.
 floating_modifier $mod
 
 # Start a terminal using i3-sensible-terminal. It has its own settings to
-# choose which terminal to start. I only have xterm and Terminator, and it
-# choose Terminator. TDL: put ref links here.
+# choose which terminal to start. I only installed xterm and Terminator, and it
+# choose Terminator. 
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Kill focused window.
@@ -67,29 +66,27 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split).
-# Note: this is the default, I rarely used this.
+# Note: This is the default setting.
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # Toggle tiling / floating mode.
-# Note: this is the default, I rarely used this.
+# Note: This is the default setting.
 bindsym $mod+Shift+space floating toggle
 
 # Change focus between tiling / floating windows.
-# Note: this is the default, I rarely used this.
-# Might want to practice using this to avoid using arrow key too much.
+# Note: This is the default setting.
 bindsym $mod+space focus mode_toggle
 
 # Focus the parent container
-# Note: this is the default, I rarely used this. 
-# Might want to practice using this to avoid using arrow key too much.
+# Note: This is the default setting.
 bindsym $mod+a focus parent
 
 # Name the workspace string. 
 # Use the $tag variable for workspace related keybinding below.
-set $tag1 "1: webs"
-set $tag2 "2: term"
+set $tag1 "1: term"
+set $tag2 "2: http"
 set $tag3 "3: code"
 set $tag4 "4: vids"
 set $tag5 "5: file"
