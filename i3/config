@@ -143,7 +143,9 @@ bindsym --release Print exec --no-startup-id scrot '%Y-%m-%d_%H:%M:%S_$wx$h_scro
 # Auto-start program on boot
 # - Use nitrogen to set wallpapers 
 #   Ensure nitrogen and archlinux-wallpapers are configured first. 
+# - Use compton for transparency effect on Terminator
 exec_always --no-startup-id nitrogen --restore
+exec --no-startup-id compton -b
 
 # Reload the configuration file.
 bindsym $mod+Shift+c reload
