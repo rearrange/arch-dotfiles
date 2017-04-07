@@ -183,10 +183,10 @@ bindsym $mod+r mode "resize"
 # file located at $XDG_CONFIG_HOME.
 bar {
         position top
-	status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3status -c ~/.config/i3/i3status_top.conf
 }
 
 bar {
 	position bottom
-	status_command i3status -c ~/.config/i3/i3status.conf
+	tray_output primary
 }
