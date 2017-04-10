@@ -1,5 +1,59 @@
-" Set line number on the left
+" File: .vimrc
+" Maintainer: Sallehin Sallehuddin (rearrange)
+" Reference: Initially based from https://vim.swaroopch.com/plugins.html
+" Licenses: https://opensource.org/licenses/MIT
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" Enable syntax highlighting.
+syntax on
+filetype plugin on
+
+" Show line numbers on the left bar
 set number
 
-" Set syntax highlighting
-syntax on
+" Automatically indent when adding a curly bracket, etc.
+set smartindent
+
+" Tabs should be converted to a group of 4 spaces.
+" Following PEP-8 convention - http://www.python.org/dev/peps/pep-0008/
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set smarttab
+
+" Minimal number of screen lines to keep above and below the cursor.
+set scrolloff=999
+
+" Use UTF-8.
+set encoding=utf-8
+
+" Set color scheme that I like.
+if has("gui_running")
+  colorscheme molokai_dark
+else
+  colorscheme atom
+endif
+
+" Show line number, cursor position at bottom
+set ruler
+
+" Display incomplete commands.
+set showcmd
+
+" Search as you type.
+set incsearch
+
+" Ignore case when searching.
+set ignorecase
+
+" Show autocomplete menus.
+set wildmenu
+
+" Show editing mode
+set showmode
+
+" Error bells are displayed visually.
+set visualbell
