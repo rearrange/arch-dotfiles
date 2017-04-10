@@ -18,8 +18,8 @@ font pango: Monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position.
 floating_modifier $mod
 
-# No title-bar or border for all apps!
-new_window none
+# Set title-bar (border) for all apps
+new_window normal
 
 # Start a terminal using i3-sensible-terminal. It has its own settings to
 # choose which terminal to start. I only installed xterm and Terminator, and it
@@ -187,6 +187,7 @@ bindsym $mod+r mode "resize"
 bar {
         position top
 	workspace_buttons no
+	font pango:Economica, FontAwesome 10 
 	status_command i3status -c ~/.config/i3/i3status_top.conf
 }
 
