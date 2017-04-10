@@ -1,0 +1,2 @@
+emulate sh -c 'export PATH=$PATH:~/.config/composer/vendor/bin:$(ruby -rubygems -e "puts Gem.user_dir")/bin'
+emulate sh -c 'export GEM_HOME=$(ruby -e "print Gem.user_dir")'
