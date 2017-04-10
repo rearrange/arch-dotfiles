@@ -30,12 +30,11 @@ set scrolloff=999
 " Use UTF-8.
 set encoding=utf-8
 
-" Set color scheme that I like.
-if has("gui_running")
-  colorscheme molokai_dark
-else
-  colorscheme atom
-endif
+" Set background to dark, colorscheme to Gruvbox, and make transparent
+" background
+set bg=dark
+colorscheme gruvbox
+hi Normal ctermbg=none
 
 " Show line number, cursor position at bottom
 set ruler
