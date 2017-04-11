@@ -13,7 +13,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. By default, the i3-config-wizard also 
 # provided pango: DejaVu Sans Mono 8 as another selection, but I've deleted it
-font pango: Monospace 8
+font pango: Monospace, FontAwesome 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position.
 floating_modifier $mod
@@ -88,12 +88,12 @@ bindsym $mod+a focus parent
 
 # Name the workspace string. 
 # Use the $tag variable for workspace related keybinding below.
-set $tag1 "1: term"
-set $tag2 "2: http"
-set $tag3 "3: code"
-set $tag4 "4: vids"
-set $tag5 "5: file"
-set $tag6 "6: misc"
+set $tag1 "  : term"
+set $tag2 "  : webz"
+set $tag3 "  : code"
+set $tag4 "  : vidz"
+set $tag5 "  : file"
+set $tag6 "  : song"
 
 # Switch to workspace
 bindsym $mod+1 workspace $tag1
