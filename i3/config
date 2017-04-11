@@ -185,9 +185,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar. Use custom i3status configuration
 # file located at $XDG_CONFIG_HOME.
 bar {
-        position top
+    position top
 	workspace_buttons no
-	font pango:Economica, FontAwesome 10 
+	font pango: Monospace, FontAwesome 10 
 	status_command i3status -c ~/.config/i3/i3status_top.conf
 }
 
