@@ -86,6 +86,9 @@ bindsym $mod+space focus mode_toggle
 # Note: This is the default setting.
 bindsym $mod+a focus parent
 
+# Browser popup 
+for_window [window_role="pop-up"] floating enable
+
 # Name the workspace string. 
 # Use the $tag variable for workspace related keybinding below.
 set $tag1 "  : term"
@@ -189,6 +192,7 @@ bar {
 	workspace_buttons no
 	font pango: Monospace, FontAwesome 10 
 	status_command i3status -c ~/.config/i3/i3status_top.conf
+    tray_output none
 }
 
 bar {
