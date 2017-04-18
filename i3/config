@@ -199,3 +199,6 @@ bar {
 	position bottom
 	tray_output primary
 }
+
+# Make this config file recognizable by vim
+# vim:filetype=i3
